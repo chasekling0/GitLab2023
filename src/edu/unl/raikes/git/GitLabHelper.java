@@ -1,18 +1,21 @@
 package edu.unl.raikes.git;
 
+import java.util.Arrays;
+
 public class GitLabHelper {
+
+    private String[] persons;
     
-    private String person1;
-    private String person2;
-    
-    GitLabHelper(String person1, String person2){
+    GitLabHelper(String[] persons){
         
-        this.person1 = person1;
-        this.person2 = person2;
-        
+        this.persons = persons;
     }
-    
+   
     public void PrintWelcomeMessage() {
-        System.out.printf("This is a lesson on git made by %s and %s", person1, person2);
+
+        System.out.printf("This is a lesson on git made by %s", Arrays.toString(persons));
+
+        
+
     }
 }
